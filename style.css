@@ -1,12 +1,19 @@
 body {
     margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+div {
+    display: inline-block;
 }
 
 main {
-    display: flex;
+    display: inline-flex;
+    justify-content: flex-start;
     flex-wrap: wrap;
     margin: 10px;
-    justify-content: center;
+    width: auto;
 }
 
 article {
@@ -15,12 +22,3 @@ article {
     height: 200px;
     margin: 10px;
 }
-
-/*
-5. Зробіть так, щоб контент вирівнювався по центру, але якщо кількість блоків article в 
-останньому рядку менша за кількість блоків у попередніх рядках, то елементи вирівнювалися 
-по лівому краю контейнера (саме контейнера, а не сторінки), а не по центру. Це має 
-працювати для будь-якої кількості елементів у контейнері і будь-якої ширини екрана.
-
-Пункт 5 — важка задача, тому буде зараховано будь-яке її робоче розв'язання.
-*/
